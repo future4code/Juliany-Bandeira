@@ -1,0 +1,3 @@
+# Aprendizados da semana
+
+Essa primeira semana de **Onboarding**, foi muito animadora. Apesar de entender claramente o desafio que está por vim, me sinto confiante tanto no processo e como em mim, estou ciente que não será fácil mas com certeza será **recompensador**. Outro ponto muito bom dessa semana foi o reforço da rotina pois vi de forma clara como serão os próximos meses e isso me ajudou a pensar como farei para tirar o máximo de proveito das atividades propostas. No aprendizado técnico aprender sobre terminal, Git e Github sem dúvidas incrível, visto que estou aprendendo do zero, conseguir entender esses primeiros tópicos foi muito legal. Enfim começar a conhecer a **equipe Labenu** e o método isso já me deixou bem **animada** pelo que está por vir.  Até mais!
