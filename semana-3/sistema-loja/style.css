@@ -1,0 +1,74 @@
+.primeiro-icone{
+    width: 50px;
+    display: inline;
+    margin-left: 40vw;
+    }
+
+.icones{
+    width: 50px;
+    display: inline;
+    margin-left: 2vw;
+}
+
+.icone-login{
+    position:absolute;
+    display: block;   
+    margin-left: 85vw;
+    padding: 0;
+}
+
+.links{
+    color: white;
+    width: 700px; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.imagem-central{
+        display: block;
+        margin-left: auto;
+        margin-right: auto 
+    }
+
+.texto-centralizado{
+        color: rgb(179, 100, 126);
+        font-family: Brush Script MT, Brush Script Std, cursive; 
+        font-variant: normal;
+        text-align: center;
+}
+
+.texto-centralizado2{
+    color: rgb(54, 5, 77);
+    font-family: Snell Roundhand, cursive; 
+    text-align: center;
+}
+
+.background-frete{
+        color: white;
+        font-size: medium;
+        background-color: rgb(221, 198, 206);
+        padding: 1px;
+        text-align: center;
+    }
+
+.background-loja{
+    background-color: rgb(231, 225, 227);
+}
+
+.fonte-marca{
+   color: rgb(173, 41, 85);
+   font-family: Brush Script MT, Brush Script Std, cursive; 
+   font-variant: normal;
+   text-align: center;
+}
+
+.icone-fixo{
+    width: 50px;
+    position: fixed;
+    top: 80%;
+    right: 1%;
+    padding: 10px;
+}
+.elementos-arredondados{
+border-radius: 5px;
+}
