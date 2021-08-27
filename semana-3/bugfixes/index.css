@@ -137,6 +137,13 @@ td button:active {
     height: 100px;
 }
 
+div>input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid black; 
+}
+
 
 #back-button {
     background-color: white;
