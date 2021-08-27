@@ -78,6 +78,12 @@ a {
     padding-top: 20px;
 }
 
+#container-de-descricao>p {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+
 #container-de-descricao>ol {
     padding: 15px 0px;
 }
