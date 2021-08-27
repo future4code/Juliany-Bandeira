@@ -27,7 +27,7 @@ button:focus {
 }
 
 img {
-    width: 100px;
+    width: 50px;
 }
 
 div>p:first-child {
@@ -36,6 +36,11 @@ div>p:first-child {
 
 div img {
     width: 50px;
+}
+
+div>a {
+    display: block;
+    padding-top: 100px;
 }
 
 a {
@@ -76,7 +81,7 @@ a {
 #container-de-descricao {
     background-color: #2274a5;
     color: white;
-    padding-top: 20px;
+    padding-top: 100px;
 }
 
 #container-de-descricao>p {
@@ -90,13 +95,15 @@ a {
 }
 
 #container-para-comprar {
+    padding: 100px;
     background-color: #e7eb90;
 }
 
 #container-para-comprar>p {
     color: #c44f00;
-    padding: 100px 0;
+    padding: 100px;
     font-size: 60px;
+    padding-bottom: 100px;
 }
 
 
