@@ -68,9 +68,6 @@ div>p{
     text-align: center;
 }
 
-.formulario-contato{
-
-}
 .barra {
     height: 200px;
 }
@@ -82,6 +79,12 @@ div>p{
 
 .icones-hard{
     width: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.icones-git{
+    width: 160px;
     margin: 0 auto;
     text-align: center;
 }
@@ -106,4 +109,28 @@ table{
 font-size: 30px;
 display: block;
 margin: 0 auto;
+}
+
+.campo{
+    font-size: 20px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    text-align: center;
+
+}
+
+.campo input[type="text"]{
+    width: 500px;
+}
+
+.campo input[type="email"]{
+    width: 500px;
+}
+.campo input:focus, .campo textarea:focus{
+    background: rgb(12, 11, 12);
+}
+
+#botao-enviar{
+    font-size: 15px;
 }
