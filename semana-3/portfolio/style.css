@@ -134,3 +134,8 @@ margin: 0 auto;
 #botao-enviar{
     font-size: 15px;
 }
+
+.icone-tocode{
+    width: 400px;
+    margin-left: 7%;
+}
