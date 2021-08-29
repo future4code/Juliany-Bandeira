@@ -10,40 +10,42 @@
 <body class="background-loja">
     <div>
         <h1 class="fonte-marca">Richesse</h1>
-    </div>
-    
-    <div>
-        <a href="index.html">Página Inicial</a>
-        <a href="ctrl-estoque.html">Controle de Estoque</a>
-        <a href="add-produto.html">Adicionar Produto</a>
-        <a href="funcionarios.html">Funcionários</a>
+        <p class="texto-centralizado"><em>Acessórios feitos para realçar você</em> ♥</p>
     </div>
 
+    <div>
+    <table>
+        <td><a class="links" href="index.html"><b>Página Inicial</b></a></td>
+        <td><a class="links" href="ctrl-estoque.html"><b>Controle de Estoque</b></a></td>
+        <td><a class="links" href="add-produto.html">Adicionar Produto</a></td>
+        <td><a class="links" href="funcionarios.html"><b>Funcionários</b></a></td>
+    </table>
+    </div>
     
     <h2>Adicionar Produto</h2>
     <form action="">
-        <div>
-            <label for="link-foto">Link para foto: </label>
+        <div class="formulario">
+            <label for="link-foto">Link para foto </label>
             <input class="elementos-arredondados" type="url" id="link-foto" name="link-foto">
         </div>
         <br>
-        <div>
-            <label for="descricao">Descrição do produto: </label>
+        <div class="formulario">
+            <label for="descricao">Descrição </label>
             <input class="elementos-arredondados" type="text" id="descrição" name="descrição">
         </div>
         <br>
-        <div>
-            <label for="preco">Preço (em R$): </label>
+        <div class="formulario">
+            <label for="preco">Preço (em R$) </label>
             <input class="elementos-arredondados" type="number" id="preço" name="preço">
         </div>
         <br>
-        <div>
-            <label for="quantidade">Quantidade disponível: </label>
+        <div class="formulario">
+            <label for="quantidade">Quantidade </label>
             <input class="elementos-arredondados" type="number" id="quantidade" name="quantidade">
         </div>
         <br>
-        <div class="form-add">
-            <button class="elementos-arredondados" type="submit">Adicionar</button>
+        <div class="formulario">
+            <button type="submit">Adicionar</button>
         </div>
 
     </form>
