@@ -104,5 +104,20 @@ footer{
     .area-midia{
         text-align: center;
     }
+}
+
+@media screen and (min-device-width:500px) and (max-device-width:1050px) {
+
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
     
+    video{
+        width: 95%;
+        border-radius: 5px;
+    }
+
+    .area-midia{
+        text-align: center;
+    }
 }
