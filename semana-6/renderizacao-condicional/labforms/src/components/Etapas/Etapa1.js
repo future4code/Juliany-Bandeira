@@ -1,12 +1,17 @@
 import React from 'react';
+import styled from 'styled-components'
 
+const Titulo1 = styled.h1`
+  color: blueviolet;
+  margin: 50px;
+`
 
 export default class Etapa1 extends React.Component {
 
   render () {
     return (
         <div>
-            <h1>ETAPA 1 - DADOS GERAIS</h1>
+            <Titulo1>ETAPA 1 - DADOS GERAIS</Titulo1>
 
             <h2>1. Qual o seu nome?</h2>
             <input />
@@ -21,7 +26,7 @@ export default class Etapa1 extends React.Component {
                 <option value="superior-incompleto">Ensino superior incompleto</option>
                 <option value="superior-completo">Ensino superior completo</option>
             </select>
-      </div>
+        </div>
     );
   };
 }

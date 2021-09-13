@@ -9,6 +9,14 @@ const LayoutGeral = styled.div`
   text-align: center;
 `
 
+const Botao = styled.button`
+  padding: 5px;
+  margin: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+`
+
+
 export default class App extends React.Component {
   state= {
     etapa: 1,
@@ -33,11 +41,17 @@ export default class App extends React.Component {
     this.setState({etapa: proximaEtapa})
   }
 
+  botao = () => {
+    if(this.state.etapa<4){
+      return <Botao onClick={this.irParaProximaEtapa}>Próxima etapa</Botao>
+    }  
+  }
+
   render () {
     return (
       <LayoutGeral>
         {this.renderizaEtapa()}
-        <button onClick={this.irParaProximaEtapa}>Próxima etapa</button>
+        {this.botao()}
       </LayoutGeral>
     );
   }
