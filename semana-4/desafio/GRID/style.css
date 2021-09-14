@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: white;
+    width: 100%;
+    height: 100%;
+
+    
+}
+
+header{
+    grid-column: 1/ -1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.yellow{
+    height: 60px;
+    background-color: yellow;
+    display: grid;
+    grid-column: 2/5;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.green{
+    height: 60px;
+    background-color: green;
+    display: grid;
+    grid-column: 1/2;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pink{
+    height: 500px;
+    background-color:rgb(224, 21, 180);
+    display: grid;
+    grid-column: 1/-1;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);   
+}
+
+section{
+    grid-column: 4/5;
+}
+
+.blue{
+    height: 200px;
+    background-color: blue;
+    grid-column: 1/3;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.red{
+    height: 100px;
+    background-color: red;
+    grid-column: 4/5;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.lightgreen{
+    grid-column: 4/5;
+    height: 100px;
+    background-color: lightgreen;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer{
+    height: 40px;
+    background-color: blueviolet;
+    grid-column: 1/-1;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 80px 1fr 70px;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+header{
+    color: white;
+    grid-column: 1/-1;
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.imagem-e-texto{
+    display: flex;
+    align-items: center;
+    
+}
+
+#icone-play{
+    width: 50px;
+    margin-right: 20px;
+}
+
+input{
+    background-color: linen;
+    width: 30%;
+    height: 30px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+main{
+    background-color: lightblue;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.card-midia{
+    color: darkslategrey;
+    background-color: linen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid lightslategray;
+    box-shadow: 2px 2px 5px darkgray;
+    margin: 20px;
+}
+
+h3{
+    margin-top: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+div img{
+    width: 100%;
+}
+
+.area-midia{
+    background-color: linen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+video{
+    width: 50%;
+    border-radius: 5px;
+}
+
+footer{
+    color: white;
+    grid-column: 1/-1;
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-device-width:500px) {
+
+    main{
+        grid-template-columns: 1fr;
+    }
+    
+    video{
+        width: 95%;
+        border-radius: 5px;
+    }
+
+    .area-midia{
+        text-align: center;
+    }
+}
+
+@media screen and (min-device-width:500px) and (max-device-width:1050px) {
+
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    video{
+        width: 95%;
+        border-radius: 5px;
+    }
+
+    .area-midia{
+        text-align: center;
+    }
+}
