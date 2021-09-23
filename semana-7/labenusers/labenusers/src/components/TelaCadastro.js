@@ -30,7 +30,7 @@ export default class TelaCadastro extends React.Component {
         userEmail:""
       };
 
-    changeUserName = (event) =>{
+      changeUserName = (event) =>{
         this.setState({userName: event.target.value})
     };
 
