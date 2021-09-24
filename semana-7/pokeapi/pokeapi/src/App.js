@@ -1,51 +1,58 @@
-import React from 'react';
-import styled from 'styled-components';
-import axios from 'axios';
+import React from "react";
+import axios from "axios";
 
 export default class App extends React.Component {
   state = {
-    ids:[1,2,3,4,5,6,7],
-    id: '',
-    inputId: 0,
-    pokemon: {},
-    picture:''
-  }
+    idPoke: 0,
+    pokemonName: [],
+    urlpoke:'',
+    evolucaoName: [],
+    picture: ""
+  };
 
   changeId = (event) => {
-    this.setState({id: event.target.value})
-    console.log(this.state.id)
-  } 
+    this.setState({ idPoke: Number(event.target.value) });
+  };
 
-  getEvolutions = (id) => {
-    axios 
-    .get(`https://pokeapi.co/api/v2/evolution-chain/${id}/`)
-    .then((response) => {
-      this.setState({pokemon: response.data})
-    console.log({pokemon: response})
-    })
-    .catch ((error) => {
-      alert(error.response)
-    })
-    
-  }
+  getEvolutions = async () => {
+    const id = this.state.idPoke;
+    console.log({ id });
 
-  render(){
+    const response = await axios.get(
+      `https://pokeapi.co/api/v2/evolution-chain/${id}/`
+    );
+    this.setState({ pokemonName: response.data.chain.species.name, urlpoke:response.data.chain.species.url, evolucaoName:response.data.chain.evolves_to});
+    console.log({urlpoke:response.data});
 
-    const id = this.state.ids.map((id) => {
-      return (
-      <option key={id} value={id}>{id}</option>)
-    })
 
+      const url = this.state.urlpoke
+      const res = await axios.get (`${url}`);
+      console.log("Array", res)
+
+  };
+
+  // getPokemonPicture = async (event) => {
+  //   console.log(event.target.value);
+  //   const url = this.state.urlpoke
+
+  //   const response = await axios.get (`${url}`);
+  //   console.log("Array", response.data)
+    // this.setState({picture: response.data.sprites.front_default})
+  //} 
+
+  render() {
     return (
       <div>
         <h1>Pokevolution</h1>
         <p>Digite um número de 0 a 200 e veja o Pokemon sorteado e sua evolução</p>
-        <select value={this.state.id} onChange={this.changeId}>
-          <option>Selecione um pokemon</option>
-        {id}
-        </select>
-        {/* <input type="number" value={this.state.inputId} onChange={this.changeId} placeholder="Número escolhido"/> */}
-        <button onClick={()=>this.getEvolutions(id)}>Conhecer evolução</button>
+        <input
+          value={this.state.idPoke}
+          onChange={this.changeId}
+          placeholder="Número escolhido"/>
+        <button onClick={this.getEvolutions}>Conhecer evolução</button>
+        <div>
+          {this.state.pokemonName}
+        </div>
       </div>
     );
   }
